@@ -88,9 +88,12 @@ function part1sport() {
         if (dataNum1 == 1) {
             $(".right1").show();
             $('.swim').addClass('run_swim');
-            $(".bingo").show();
+
             $("#audio1").attr("src", "audio/cheer.mp3");
             audio1.play();
+            setTimeout(function () {
+                $(".bingo").show();
+            },500)
             setTimeout(function () {
                 $(".next1").show();
             }, 1000);
@@ -133,7 +136,9 @@ function part2sport() {
         if (dataNum2 == 1) {
             $('.drive').addClass("run_drive")
             $(".right2").show();
-            $(".bingo").show();
+            setTimeout(function () {
+                $(".bingo").show();
+            },500)
             setTimeout(function () {
                 $(".next2").show();
             }, 1000);
@@ -178,8 +183,10 @@ function part3sport() {
         pClickDataNum = dataNum3;
         if (dataNum3 == 0) {
             $(".right3").show();
-            $(".bingo").show();
             $('.tea').addClass('run_tea');
+            setTimeout(function () {
+                $(".bingo").show();
+            },500)
             setTimeout(function () {
                 $(".end").show();
             }, 3000);
