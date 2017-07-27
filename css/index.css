@@ -468,41 +468,26 @@
 }
 @-webkit-keyframes changeImg2 {
 	0% {
-		background: url(../images/car2.png) top center no-repeat;
-		background-size: auto 100%;
-	}
-	9% {
-		background: url(../images/car2.png) top center no-repeat;
-		background-size: auto 100%;
-	}
-	10% {
-		background: url(../images/car3.png) top center no-repeat;
-		background-size: auto 100%;
-	}
-	19% {
-		background: url(../images/car3.png) top center no-repeat;
-		background-size: auto 100%;
-	}
-	20% {
-		background: url(../images/car4.png) top center no-repeat;
-		background-size: auto 100%;
-	}
-	29% {
-		background: url(../images/car4.png) top center no-repeat;
-		background-size: auto 100%;
-	}
-	30% {
-		background: url(../images/car5.png) top center no-repeat;
-		background-size: auto 100%;
-	}
-	39% {
-		background: url(../images/car5.png) top center no-repeat;
+		background: url(../images/car1.png) top center no-repeat;
 		background-size: auto 100%;
 	}
 	40% {
-		background: url(../images/car6.png) top center no-repeat;
+		background: url(../images/car3.png) top center no-repeat;
 		background-size: auto 100%;
 	}
+	60% {
+		background: url(../images/car5.png) top center no-repeat;
+		background-size: auto 100%;
+	}
+	80% {
+		background: url(../images/car3.png) top center no-repeat;
+		background-size: auto 100%;
+	}
+	100% {
+		background: url(../images/car1.png) top center no-repeat;
+		background-size: auto 100%;
+	}
+
 }
 
 .part3 {
