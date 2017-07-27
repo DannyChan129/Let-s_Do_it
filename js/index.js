@@ -100,7 +100,7 @@ function part1sport() {
             $(".quizzes1 p").unbind("click");
         } else {
             $(".false1").addClass("smiling-animate").show();
-            $("#audio1").attr("src", "audio/TRY AGAIN.mp3");
+            $("#audio1").attr("src", "http://live.babyfs.cn/web/H5/common/audio/try%20again.mp3");
             audio1.play();
             setTimeout(function () {
                 $(".false1").removeClass("smiling-animate").hide();
@@ -147,7 +147,7 @@ function part2sport() {
             $(".quizzes2 p").unbind("click");
         } else {
             $(".false2").addClass("smiling-animate").show();
-            $("#audio1").attr("src", "audio/TRY AGAIN.mp3");
+            $("#audio1").attr("src", "http://live.babyfs.cn/web/H5/common/audio/try%20again.mp3");
             audio1.play();
             setTimeout(function () {
                 $(".false2").removeClass("smiling-animate").hide();
@@ -189,13 +189,15 @@ function part3sport() {
             },500)
             setTimeout(function () {
                 $(".end").show();
+                $("#audio1").attr("src", "http://live.babyfs.cn/web/H5/common/audio/finish0.mp3");
+                audio1.play();
             }, 3000);
             $("#audio1").attr("src", "audio/cheer.mp3");
             audio1.play();
             $(".quizzes3 p").unbind("click");
         } else {
             $(".false3").addClass("smiling-animate").show();
-            $("#audio1").attr("src", "audio/TRY AGAIN.mp3");
+            $("#audio1").attr("src", "http://live.babyfs.cn/web/H5/common/audio/try%20again.mp3");
             audio1.play();
             setTimeout(function () {
                 $(".false3").removeClass("smiling-animate").hide();
@@ -243,7 +245,7 @@ var the_images = [
     "audio/drive.mp3",
     "audio/havetea",
     "audio/swim.mp3",
-    "audio/TRY AGAIN.mp3"
+
 ];
 jQuery.imgpreload(the_images, {
     each: function () {
