@@ -1,0 +1,647 @@
+@import "reset.css";
+
+/*  */
+
+#loading {
+	display: block;
+	background: #1a1a1a url(http://live.babyfs.cn/web/H5/wjy/drawflowers20170303/loading.gif) center no-repeat;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999999;
+}
+
+#loading p {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+	left: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+	color: #999;
+	z-index: 999999999;
+}
+
+
+/* index */
+
+.p-index {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	min-width: 320px;
+	max-width: 640px;
+	margin: 0 auto;
+	overflow: hidden;
+	display: none;
+	transform-style: preserve-3d;
+	-webkit-transform-origin: 0px 0px 0px;
+	-webkit-perspective: 200px;
+	-webkit-backface-visibility: hidden;
+}
+
+.portrait .p-index {
+	-webkit-transform: scale(0.4);
+	margin-top: -44%;
+}
+
+
+/* m- */
+
+.m-page {
+	position: absolute;
+	left: 0;
+	top: 0%;
+	height: 100%;
+	width: 100%;
+	min-width: 320px;
+	max-width: 640px;
+	-webkit-transform-origin: 50px 0px 0px;
+	display: none;
+}
+
+.m-page.cur {
+	display: block;
+	z-index: 3;
+}
+
+.m-img {
+	width: 100%;
+	height: 100%;
+}
+
+
+/* page0 */
+
+.m-img1 {
+	/*background: url(http://live.babyfs.cn/web/H5/wjy/drawflowers20170303/page1.jpg) top center no-repeat;*/
+	background-size: 100% 100%;
+	position: relative;
+}
+
+
+.start {
+	width: 100%;
+	height: 100%;
+	background: url(../images/homePage.png) center center no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.startbut {
+	width: 36%;
+	height: 8.74%;
+	background: url(../images/starbut.png) top center no-repeat;
+	background-size: auto 100%;
+	position: absolute;
+	top: 86%;
+	left: 31.5%;
+}
+
+
+/*rule*/
+
+.rule {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: url(../images/rule.jpg) top center no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+
+.rule p {
+	width: 26.6%;
+	height: 9.02%;
+	background: url(../images/gbut.png) top center no-repeat;
+	background-size: auto 100%;
+	position: absolute;
+	top: 84%;
+	left: 36.5%;
+}
+
+.finger {
+	width: 22.6%;
+	height: 11.02%;
+	background: url(http://live.babyfs.cn/web/H5/wjy/drawflowers20170303/finger.png) top center no-repeat;
+	background-size: auto 100%;
+	position: absolute;
+	top: 89%;
+	left: 25.5%;
+	-webkit-animation: fingersport 1.6s 0.4s infinite;
+}
+
+@-webkit-keyframes fingersport {
+	from {
+		-webkit-transform: translateY(3%);
+	}
+	to {
+		-webkit-transform: translateY(-3%);
+	}
+}
+
+.part1 {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: url(../images/backImg.jpg) top center no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+
+.text {
+	    display: none;
+    width: 87.4%;
+    height: 9.7%;
+    position: absolute;
+    top: 2.24%;
+    left: 3.33%;
+    background: url(../images/swimtext.png) top center no-repeat;
+    background-size: auto 100%;
+}
+
+.text-animate {
+	-webkit-animation: bounceInDown 2s 0s forwards;
+}
+
+@-webkit-keyframes bounceInDown {
+	from,
+	60%,
+	75%,
+	90%,
+	to {
+		-webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+		animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	}
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -3000px, 0);
+		transform: translate3d(0, -3000px, 0);
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 25px, 0);
+		transform: translate3d(0, 25px, 0);
+	}
+	75% {
+		-webkit-transform: translate3d(0, -10px, 0);
+		transform: translate3d(0, -10px, 0);
+	}
+	90% {
+		-webkit-transform: translate3d(0, 5px, 0);
+		transform: translate3d(0, 5px, 0);
+	}
+	to {
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+.false0 {
+	display: none;
+	width: 42.4%;
+	height: 23.39%;
+	position: absolute;
+	top: 38.39%;
+	left: 27.2%;
+	background: url(../images/false.png) top center no-repeat;
+	background-size: auto 100%;
+	z-index: 3;
+}
+
+.right0 {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	background: url(../images/tescttvt.png)top center no-repeat;
+	background-size: 100% 100%;
+	z-index: 5;
+}
+
+.bingo {
+	display: none;
+	width: 69%;
+	height: 50%;
+	position: absolute;
+	top: 19%;
+	left: 17%;
+	background: url(../images/bingo.png) top center no-repeat;
+	background-size: auto 100%;
+	z-index: 6;
+	-webkit-animation: pulseRight 1s .6s ease both;
+}
+
+@-webkit-keyframes pulseRight {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(0.3)
+	}
+	40% {
+		-webkit-transform: scale(1.6)
+	}
+	80% {
+		-webkit-transform: scale(0.8)
+	}
+	90% {
+		-webkit-transform: scale(1.2)
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: scale(1)
+	}
+}
+
+.smiling-animate {
+	opacity: 1;
+	-webkit-animation: smilingsport 1s .2s ease both;
+}
+
+@-webkit-keyframes smilingsport {
+	0% {
+		opacity: 0;
+	}
+	1% {
+		opacity: 1;
+	}
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		-webkit-transform: translateY(0)
+	}
+	40% {
+		opacity: 1;
+		-webkit-transform: translateY(-30px)
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: translateY(-15px)
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.quizzes1 p:nth-child(2) {
+	display: none;
+	width: 86%;
+	height:41.3%;
+    position: absolute;
+    top: 15.9%;
+    left: 8%;
+    background: url(../images/swim1.png) top center no-repeat;
+    background-size: auto 100%;
+}
+
+
+.run_swim{
+	-webkit-animation: changeImg1 1s linear infinite !important;
+}
+@-webkit-keyframes changeImg1 {
+	0% {
+		background: url(../images/swim2.png) top center no-repeat;
+		background-size: auto 100%;
+	}
+	40% {
+		background: url(../images/swim3.png) top center no-repeat;
+		background-size: auto 100%;
+	}
+	80% {
+		background: url(../images/swim2.png) top center no-repeat;
+		background-size: auto 100%;
+	}
+	100% {
+		background: url(../images/swim3.png) top center no-repeat;
+		background-size: auto 100%;
+	}
+}
+.quizzes1 p:nth-child(1) {
+	display: none;
+    width: 86%;
+    height:41.3%;
+    position: absolute;
+    top: 57.6%;
+    left: 8%;
+    background: url(../images/tea1.png)top center no-repeat;
+    background-size: auto 100%;
+}
+
+.quizzes-animate{
+	-webkit-animation:bounceInLeft 2s 0s forwards;
+}
+@-webkit-keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.quizzes-animate1{
+	-webkit-animation:bounceInRight 2s 0s forwards;
+}
+@-webkit-keyframes bounceInRight {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.next0 {
+	display: none;
+	width: 50.73%;
+	height: 10.2%;
+	position: absolute;
+	top: 79.06%;
+	left: 23.67%;
+	background: url(../images/next0.png) top center no-repeat;
+	background-size: auto 100%;
+	z-index: 6;
+}
+
+.part2 {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: url(../images/backImg.jpg) top center no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+
+.text2 {
+	background: url(../images/drivetext.png) top center no-repeat;
+	background-size: auto 100%;
+}
+
+.quizzes2 p:nth-child(2) {
+	display: none;
+	width: 86%;
+	height:41.3%;
+	position: absolute;
+	top: 15.9%;
+	left: 8%;
+    background: url(../images/car1.png) top center no-repeat;
+    background-size: auto 100%;
+}
+
+.quizzes2 p:nth-child(1) {
+	display: none;
+	width: 86%;
+	height:41.3%;
+	position: absolute;
+	top: 57.6%;
+	left: 8%;
+    background: url(../images/tea1.png) top center no-repeat;
+    background-size: auto 100%;
+}
+
+.run_drive{
+	-webkit-animation: changeImg2 1s linear  !important;
+}
+@-webkit-keyframes changeImg2 {
+	0% {
+		background: url(../images/car2.png) top center no-repeat;
+		background-size: auto 100%;
+	}
+	9% {
+		background: url(../images/car2.png) top center no-repeat;
+		background-size: auto 100%;
+	}
+	10% {
+		background: url(../images/car3.png) top center no-repeat;
+		background-size: auto 100%;
+	}
+	19% {
+		background: url(../images/car3.png) top center no-repeat;
+		background-size: auto 100%;
+	}
+	20% {
+		background: url(../images/car4.png) top center no-repeat;
+		background-size: auto 100%;
+	}
+	29% {
+		background: url(../images/car4.png) top center no-repeat;
+		background-size: auto 100%;
+	}
+	30% {
+		background: url(../images/car5.png) top center no-repeat;
+		background-size: auto 100%;
+	}
+	39% {
+		background: url(../images/car5.png) top center no-repeat;
+		background-size: auto 100%;
+	}
+	40% {
+		background: url(../images/car6.png) top center no-repeat;
+		background-size: auto 100%;
+	}
+}
+
+.part3 {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: url(../images/backImg.jpg) top center no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+
+.text3 {
+	background: url(../images/teatext.png) top center no-repeat;
+	background-size: auto 100%;
+}
+
+.quizzes3 p:nth-child(1) {
+	display: none;
+	width: 86%;
+	height:41.3%;
+	position: absolute;
+	top: 57.6%;
+	left: 8%;
+    background: url(../images/tea1.png) top center no-repeat;
+    background-size: auto 100%;
+    z-index: 1;
+}
+
+.quizzes3 p:nth-child(2) {
+	display: none;
+	width: 86%;
+	height:41.3%;
+	position: absolute;
+	top: 15.9%;
+	left: 8%;
+    background: url(../images/car1.png) top center no-repeat;
+    background-size: auto 100%;
+    z-index: 1;
+}
+.run_tea{
+	-webkit-animation: changeImg3 1s linear infinite !important;
+}
+@-webkit-keyframes changeImg3 {
+	0% {
+		background: url(../images/tea2.png) top center no-repeat;
+		background-size: auto 100%;
+	}
+	50% {
+		background: url(../images/tea1.png) top center no-repeat;
+		background-size: auto 100%;
+	}
+}
+
+
+.end {
+	width: 100%;
+	height: 100%;
+	background-color: #37c9ff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	display: none;
+}
+
+.end span:nth-child(1) {
+	width: 100%;
+	height: 100%;
+	background: url(../images/end_bg.png) top center no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-animation: shake 20s .2s linear infinite alternate;
+}
+
+@-webkit-keyframes shake {
+	0%,
+	100% {
+		-webkit-transform: translateX(0);
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		-webkit-transform: translateX(-8px);
+	}
+	20%,
+	40%,
+	60%,
+	80% {
+		-webkit-transform: translateX(8px);
+	}
+}
+
+.conterrabbit {
+	width: 83.4%;
+	height: 50.39%;
+	position: absolute;
+	top: 21.39%;
+	left: 8.2%;
+	background: url(../images/end_img.png) top center no-repeat;
+	background-size: auto 100%;
+	-webkit-animation: titlePulse .8s .5s ease both;
+}
+
+@-webkit-keyframes titlePulse {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(0.2)
+	}
+	60% {
+		opacity: 1;
+		-webkit-transform: scale(1.5)
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: scale(1)
+	}
+}
+
+.playangin {
+	width: 24%;
+	height: 13%;
+	background: url(../images/playagain1.png) top center no-repeat;
+	background-size: auto 100%;
+	position: absolute;
+	top: 73.8%;
+	left: 36%;
+	-webkit-animation: playsport 2s 0s infinite;
+}
+
+@keyframes playsport {
+	from {
+		-webkit-transform: rotateZ(360deg);
+	}
+	to {
+		-webkit-transform: rotateZ(0deg);
+	}
+}
